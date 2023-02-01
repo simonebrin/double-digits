@@ -105,3 +105,13 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: "Agabil";
+  src: url('../fonts/Agabil.ttf');
+}
+
+@font-face {
+  font-family: "Fifth-Grader";
+  src: url('../fonts/Fifth-Grader.ttf');
+}
