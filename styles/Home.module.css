@@ -72,7 +72,7 @@
   max-width: 30ch;
 }
 
-.center {
+/* .center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +102,7 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
-}
+} */
 
 .logo,
 .thirteen {
@@ -194,14 +194,14 @@
     margin-bottom: 0.5rem;
   }
 
-  .center {
+  /* .center {
     padding: 8rem 0 6rem;
   }
 
   .center::before {
     transform: none;
     height: 300px;
-  }
+  } */
 
   .description {
     font-size: 0.8rem;
@@ -301,6 +301,17 @@
   /* font-size: 24pt; */
 }
 
+.fifthFont {
+  font-family: "Fifth-Grader";
+  color: #efe81a;
+  font-size: 30pt;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-shadow: .5px .5px .5px #7f7c11;
+
+}
+
 .containerTest {
   display: flex;
   align-items: center;
@@ -367,25 +378,33 @@
 }
 
 .nav {
+  display: flex;
   align-items: end;
   justify-content: right;
+  flex-direction: row;
+    background-image: url("../public/ruled.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .navHeader {
   position: sticky;
   z-index: 30;
   top: 0;
+  flex-direction: row;
+    background-color: white;
 }
 .nav {
   display: flex;
   /* padding: 16px; */
   justify-content: space-between;
   align-items: center;
-  background-color: #f1f1f1;
+  flex-direction: row;
+    background-color: white;
 }
 .navMenuBar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   row-gap: 6px;
   cursor: pointer;
 }
@@ -397,7 +416,7 @@
 }
 .navMenuList {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: fixed;
   top: 60px;
   width: 288px;
@@ -421,12 +440,12 @@
   font-weight: bold;
 }
 
-.center {
+/* .center {
   min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 @media screen and (min-width: 768px) {
   .navMenuBar {
     display: none;
@@ -522,4 +541,21 @@
   align-items: center;
   display: flex;
   padding-top: 20px;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 36pt;
+  padding-top: 25px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 26pt;
+  padding: 20px;
+  text-align: center;
 }

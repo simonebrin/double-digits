@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import styles2 from "../styles/header.module.css";
 import Navbar from "../components/navbar";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 const { heroContent, heroWrapper, imageWrapper } = styles2;
@@ -44,7 +45,9 @@ export default function Home() {
             />
           </div>
           <div className={styles.column}>
-            <h1 className={styles.fourthFont}>Dancing Across America</h1>
+            <h1 className={styles.fourthFont}>
+              <Link href="/posts/dancing">Dancing Across America</Link>
+            </h1>
             <p className={styles.thirdFont}>
               Kids all over the country are dancing at the prom. We heard their
               stories. Who will you take?
