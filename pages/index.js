@@ -26,6 +26,7 @@ export default function Home() {
           <img
             className={styles.cover}
             src="/headers.png"
+            alt="cover image"
             width={1156}
             height={464}
           />
