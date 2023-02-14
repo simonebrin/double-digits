@@ -8,14 +8,14 @@ export default function FirstPost() {
   return (
     <>
       <Navbar />
+      <div className={styles.centered}>
+        <img src="/dancing.png" alt="kids dancing" width={711} height={367} />
+      </div>
       <h1 className={`${styles.fourthFont} ${styles.centered}`}>
         Dancing Across America
       </h1>
 
       <div>
-        <div className={styles.centered}>
-          <img src="/dancing.png" alt="kids dancing" width={711} height={367} />
-        </div>
         <div>
           <p className={`${styles.thirdFont} ${styles.center}`}>
             Kids all over the country are dancing at the prom. We heard their

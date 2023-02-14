@@ -8,9 +8,18 @@ export default function News() {
   return (
     <>
       <Navbar />
-      <div className={styles.latest}>
-        <h1 className={styles.sixthFont}>NEWS</h1>
+      <div className={styles.cover}>
+        <img
+          className={styles.cover}
+          src="/covernews.png"
+          alt="cover image"
+          width={1156}
+          height={464}
+        />
       </div>
+      {/* <div className={styles.latest}>
+        <h1 className={styles.sixthFont}>NEWS</h1>
+      </div> */}
       <div className={styles.row}>
         <div className={styles.column}>
           <img
@@ -45,10 +54,9 @@ export default function News() {
         </div>
       </div>
 
-        <h2 className={styles.fifthFont}>
-          <Link href="/">Back to home</Link>
-        </h2>
- 
+      <h2 className={styles.fifthFont}>
+        <Link href="/">Back to home</Link>
+      </h2>
 
       {/* <h1 className={`${styles.fourthFont} ${styles.centered}`}>
         Dancing Across America

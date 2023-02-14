@@ -404,6 +404,11 @@
   top: 0;
   flex-direction: row;
   background-color: white;
+  border-color: #efe81a;
+  border-bottom-style:solid;
+  border-bottom-width: 3pt;
+
+
 }
 
 /* .nav {
@@ -562,14 +567,14 @@
   align-items: center;
   display: flex;
   font-size: 36pt;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .center {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 26pt;
+  font-size: 36pt;
   padding: 20px;
   text-align: center;
 }
