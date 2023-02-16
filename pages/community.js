@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "styles/Home.module.css";
-import Navbar from "components/navbar";
+import styles from "../styles/Home.module.css";
+import Navbar from "../components/navbar";
 import Image from "next/image";
 
 export default function Community() {
@@ -11,10 +11,10 @@ export default function Community() {
       <div className={styles.cover}>
         <img
           className={styles.cover}
-          src="/communitycovers.png"
-          alt="events cover image"
-          width={1156}
-          height={464}
+          src="/newcommunity.png"
+          alt="community cover image"
+          width={1110}
+          height={445}
         />
       </div>
 

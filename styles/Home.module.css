@@ -386,6 +386,7 @@
   margin: 0;
   background-size: cover;
   object-position: center;
+  padding-top: 13px;
 }
 
 .nav {
@@ -393,18 +394,29 @@
   align-items: flex-end;
   justify-content: right;
   flex-direction: row;
-  /* background-image: url("../public/ruled.jpg"); */
+  /* background-image: url("../public/ruledd.jpg"); */
   background-position: center;
   background-size: cover;
 }
 
-
-div#__next header.navHeader {
+/* div#__next header.navHeader {
   position: sticky;
   z-index: 30;
   top: 0;
   flex-direction: row;
   background-color: white;
+  border-color: #efe81a;
+  border-bottom-style:solid;
+  border-bottom-width: 3pt;
+  background-image: inherit;
+} */
+
+
+header.navHeader {
+  position: sticky;
+  z-index: 30;
+  top: 0;
+  flex-direction: row;
   border-color: #efe81a;
   border-bottom-style:solid;
   border-bottom-width: 3pt;
@@ -439,13 +451,13 @@ div#__next header.navHeader {
 
 }
 
-.nav__link {
-}
+/* .nav__link {
+} */
 
 .nav__link:hover {
   opacity: .6;
 }
-`
+
 @media screen and (min-width: 768px) {
   .navMenuBar {
     display: none;
