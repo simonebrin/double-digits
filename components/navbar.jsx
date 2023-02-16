@@ -6,10 +6,11 @@ import NavItem from "../components/navitem";
 import styles from "../styles/Home.module.css";
 
 const MENU_LIST = [
-  { source: "/news.png", width: "60", href: "/news" },
-  { source: "/community.png", width: "117", href: "/community" },
-  { source: "/events.png", width: "100", href: "/events" },
+  { source: "/newsog.png", width: "60", href: "/news" },
+  { source: "/communityog.png", width: "112", href: "/community" },
+  { source: "/eventsog.png", width: "95", href: "/events" },
 ];
+
 const Navbar = () => {
   return (
     <header className={styles.navHeader}>
