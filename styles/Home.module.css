@@ -393,12 +393,13 @@
   align-items: flex-end;
   justify-content: right;
   flex-direction: row;
-  background-image: url("../public/ruled.jpg");
+  /* background-image: url("../public/ruled.jpg"); */
   background-position: center;
   background-size: cover;
 }
 
-.navHeader {
+
+div#__next header.navHeader {
   position: sticky;
   z-index: 30;
   top: 0;
@@ -407,9 +408,9 @@
   border-color: #efe81a;
   border-bottom-style:solid;
   border-bottom-width: 3pt;
-
-
+  background-image: inherit;
 }
+
 
 /* .nav {
   display: flex;
@@ -433,62 +434,21 @@
   border-radius: 2px;
 }
 .navMenuList {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  top: 60px;
-  width: 288px;
-  row-gap: 24px;
-  right: -288px;
-  padding: 24px 16px;
-  transition: all 0.2s;
-  min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
-.navMenuList.active {
-  right: 0;
-}
+
 .nav__link {
-  font-size: 18px;
-  position: relative;
-  transition: all 0.2s;
 }
 
 .nav__link:hover {
-  font-weight: bold;
+  opacity: .6;
 }
-
-/* .center {
-  min-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+`
 @media screen and (min-width: 768px) {
   .navMenuBar {
     display: none;
-  }
-  .navMenuList {
-    position: unset;
-    flex-direction: row;
-    min-height: fit-content;
-    width: fit-content;
-    column-gap: 24px;
-    align-items: center;
-  }
-  .nav__link::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 6px;
-    bottom: -16px;
-    left: 0;
-    background-color: black;
-    transition: all 0.2s;
-  }
-
-  .nav__link:hover:before {
-    width: 100%;
   }
 }
 
