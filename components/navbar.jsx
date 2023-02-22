@@ -15,6 +15,16 @@ const Navbar = () => {
   return (
     <header className={styles.navHeader}>
       <nav className={styles.nav}>
+        <div className={styles.navleft}>
+          <Link href="/">
+            <img
+              // className={styles.navleft}
+              src="/dbldig.png"
+              alt="double digits text"
+              width={215}
+            />
+          </Link>
+        </div>
         <div className={styles.navMenuList}>
           {MENU_LIST.map((menu) => (
             <NavItem {...menu} />
