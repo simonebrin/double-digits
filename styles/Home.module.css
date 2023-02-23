@@ -399,7 +399,7 @@
   background-size: cover;
 }
 
-.navleft {
+header.navleft {
     display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -409,7 +409,7 @@
   background-size: cover;
 }
 
-.navleft img {
+header.navleft img {
     display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -419,7 +419,7 @@
   background-size: cover;
 }
 
-.navleft a {
+header.navleft a {
     display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -493,6 +493,29 @@ justify-content: right;
 transform: scale(1.2);
 transition: 1s ease;
   /* background: url("../public/newshover.png") no-repeat; */
+    /* animation: shake 0.5s;
+  animation-iteration-count: infinite; */
+}
+
+/* @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+
+.navleft img:hover {
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -586,4 +609,87 @@ transition: 1s ease;
   font-size: 36pt;
   padding: 20px;
   text-align: center;
+}
+
+/* Chat containers */
+.containers {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.containerDarker {
+  border-color: #ccc;
+  background-color: #ddd;
+    border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Clear floats */
+.containers::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerDarker::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.containers img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containerDarker img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.containers img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.containersDarker img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.timeRight {
+  float: right;
+  color: #aaa;
+}
+
+.containerDarker.timeRight {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.timeLeft {
+  float: left;
+  color: #999;
+}
+
+.containerDarker.timeLeft {
+  float: left;
+  color: #999;
 }
