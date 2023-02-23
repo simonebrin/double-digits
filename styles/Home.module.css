@@ -652,7 +652,7 @@ transition: 1s ease;
 }
 
 .containerDarker img {
-  float: left;
+  float: right;
   max-width: 60px;
   width: 100%;
   margin-right: 20px;
@@ -660,13 +660,13 @@ transition: 1s ease;
 }
 
 /* Style the right image */
-.containers img.right {
+.containerDarker p{
   float: right;
   margin-left: 20px;
   margin-right:0;
 }
 
-.containersDarker img.right {
+.containerRight {
   float: right;
   margin-left: 20px;
   margin-right:0;
@@ -678,10 +678,10 @@ transition: 1s ease;
   color: #aaa;
 }
 
-.containerDarker.timeRight {
+/* .containerDarker.timeRight {
   float: right;
   color: #aaa;
-}
+} */
 
 /* Style time text */
 .timeLeft {

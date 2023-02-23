@@ -28,25 +28,25 @@ export default function Community() {
       </div>
 
       <div className={styles.containers}>
-  <img src="/bandmember.jpg" alt="Avatar"/>
+  <img src="/boyface.jpeg" alt="Avatar"/>
   <p>Hello. How are you today?</p>
         <span className={styles.timeRight}>11:00</span>
 </div>
 
 <div className={styles.containerDarker}>
-  <img src="avatarg2.jpg" alt="Avatar" className={styles.right} />
+  <img src="/girlface.jpeg" alt="Avatar" className={styles.containerRight} />
   <p>Hey! I'm fine. Thanks for asking!</p>
         <span className={styles.timeLeft}>11:01</span>
 </div>
 
 <div className={styles.containers}>
-  <img src="/bandmember.jpg" alt="Avatar"/>
+  <img src="/boyface.jpeg" alt="Avatar"/>
   <p>Sweet! So, what do you wanna do today?</p>
         <span className={styles.timeRight}>11:02</span>
 </div>
 
 <div className={styles.containerDarker}>
-        <img src="/avatarg2.jpg" alt="Avatar" className={styles.right} />
+        <img src="/girlface.jpeg" alt="Avatar" className={styles.containerRight} />
   <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
         <span className={styles.timeLeft}>11:05</span>
 </div>
