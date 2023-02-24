@@ -10,10 +10,11 @@ const MENU_LIST = [
     source: "/dbldig.png",
     styling: "logo-right-align",
     width: "215",
-    href: "/news",
+    href: "/",
   },
 
   { source: "/newsog.png", styling: "news-hover", width: "60", href: "/news" },
+
   {
     source: "/communityog.png",
     styling: "community-hover",
