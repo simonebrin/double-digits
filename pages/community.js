@@ -23,37 +23,46 @@ export default function Community() {
           A place to chat...
         </p>
       </div>
-      <div className={styles.centered}>
-        <img src="/forum.png" alt="forum screenshot" width={623} height={596} />
+
+      <div className={styles.containers}>
+        <img src="/boyface.jpeg" alt="Avatar" />
+        <p className={styles.thirdFont}>Hello. How are you today?</p>
+        <span className={styles.timeRight}>11:00</span>
+      </div>
+
+      <div className={styles.containerDarker}>
+        <img
+          src="/girlface.jpeg"
+          alt="Avatar"
+          className={styles.containerRight}
+        />
+        <p className={styles.firstFont}>Hey! I'm fine. Thanks for asking!</p>
+        <span className={styles.timeLeft}>11:01</span>
       </div>
 
       <div className={styles.containers}>
-  <img src="/boyface.jpeg" alt="Avatar"/>
-  <p>Hello. How are you today?</p>
-        <span className={styles.timeRight}>11:00</span>
-</div>
-
-<div className={styles.containerDarker}>
-  <img src="/girlface.jpeg" alt="Avatar" className={styles.containerRight} />
-  <p>Hey! I'm fine. Thanks for asking!</p>
-        <span className={styles.timeLeft}>11:01</span>
-</div>
-
-<div className={styles.containers}>
-  <img src="/boyface.jpeg" alt="Avatar"/>
-  <p>Sweet! So, what do you wanna do today?</p>
+        <img src="/boyface.jpeg" alt="Avatar" />
+        <p className={styles.thirdFont}>
+          Sweet! So, what do you wanna do today?
+        </p>
         <span className={styles.timeRight}>11:02</span>
-</div>
+      </div>
 
-<div className={styles.containerDarker}>
-        <img src="/girlface.jpeg" alt="Avatar" className={styles.containerRight} />
-  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+      <div className={styles.containerDarker}>
+        <img
+          src="/girlface.jpeg"
+          alt="Avatar"
+          className={styles.containerRight}
+        />
+        <p className={styles.firstFont}>
+          Nah, I dunno. Play soccer.. or learn more coding perhaps?
+        </p>
         <span className={styles.timeLeft}>11:05</span>
-</div>
+      </div>
 
-      <h2 className={styles.fifthFont}>
+      {/* <h2 className={styles.fifthFont}>
         <Link href="/">Back to home</Link>
-      </h2>
+      </h2> */}
     </>
   );
 }

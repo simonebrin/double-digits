@@ -7,10 +7,6 @@
       background-attachment: fixed;
   --max-width: 1100px;
   --border-radius: 12px;
-  /* --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace; */
-
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -61,9 +57,12 @@ body {
 
 body {
     background-image: url("../public/ruledd.png");
-    /* background-position: center; */
-    background-size: cover;
+    /* aspect-ratio: auto; */
+      background-repeat: no-repeat;
+    /* background-size: contain; */
+        background-size: inherit;
       background-attachment: fixed;
+      position: absolute;
 }
 
 a {
