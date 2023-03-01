@@ -17,9 +17,6 @@ export default function Events() {
           height={445}
         />
       </div>
-      {/* <div className={styles.latest}>
-        <h1 className={styles.sixthFont}>NEWS</h1>
-      </div> */}
       <div className={styles.row}>
         <div className={styles.column}>
           <img
@@ -50,10 +47,6 @@ export default function Events() {
           </p>
         </div>
       </div>
-
-      <h2 className={styles.fifthFont}>
-        <Link href="/">Back to home</Link>
-      </h2>
     </>
   );
 }
