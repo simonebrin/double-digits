@@ -174,7 +174,7 @@
   margin: 0;
   background-size: cover;
   object-position: center;
-  padding-top: 13px;
+  /* padding-top: 13px; */
 }
 
 .nav {
@@ -238,12 +238,13 @@ header.navHeader {
   border-bottom-width: 3pt;
   background-image: inherit;
   margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding-bottom: 20px;
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 10px;
   flex-wrap: wrap;
+  /* height: 188px; */
 }
 
 header.navHeader img {
@@ -307,12 +308,85 @@ transition: 1s ease;
 
 .events-hover img:hover {
   content: url(../public/eventshover.png);
-  /* animation: spinner 1s ease 0s 1;
- animation-fill-mode: none */
-  -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+
 }
+
+.logo-right-align img:hover {
+  content: url(../public/dbldigitshover.png);
+  animation: stretch 2s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
 
 @-webkit-keyframes rotate-in-center {
   0% {
@@ -453,11 +527,6 @@ transition: 1s ease;
   }
 }
 
-.logo-right-align img:hover {
-  content: url(../public/dbldigitshover.png);
-  animation: stretch 2s ease 0s 1 normal forwards;
-}
-
 @keyframes stretch {
   0% {
     transform: scale3d(1, 1, 1);
@@ -488,7 +557,7 @@ transition: 1s ease;
   }
 }
 
-/* @keyframes shake {
+@keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -500,7 +569,7 @@ transition: 1s ease;
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
-} */
+}
 
 .navleft img:hover {
   -webkit-transform: scale(1.2);
