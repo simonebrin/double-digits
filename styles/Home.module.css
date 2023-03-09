@@ -298,7 +298,7 @@ transition: 1s ease;
 }
 
 .community-hover img:hover {
-  content: url(../public/communityhover.png);
+  content: url(../public/communityog.png);
   /* animation: jello 2s ease 0s 1 normal none; */
   -webkit-animation: flip-horizontal-bottom 0.4s
     cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse;

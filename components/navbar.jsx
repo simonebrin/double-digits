@@ -16,7 +16,7 @@ const MENU_LIST = [
   { source: "/newsog.png", styling: "news-hover", width: "60", href: "/news" },
 
   {
-    source: "/communityog.png",
+    source: "/communityhover.png",
     styling: "community-hover",
     width: "112",
     href: "/community",
