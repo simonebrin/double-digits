@@ -294,23 +294,28 @@ transition: 1s ease;
 	transform: rotate(12deg) scale(1.4); */
   animation: vibrate 0.5s;
   animation-iteration-count: 4s;
+    	/* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both; */
   cursor: pointer;
 }
 
 .community-hover img:hover {
   content: url(../public/communityog.png);
   /* animation: jello 2s ease 0s 1 normal none; */
-  -webkit-animation: flip-horizontal-bottom 0.4s
+  /* -webkit-animation: flip-horizontal-bottom 0.4s
     cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse;
   animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    reverse;
+    reverse; */
+  animation: vibrate 0.5s;
+  animation-iteration-count: 4s;
 }
 
 .events-hover img:hover {
   content: url(../public/eventshover.png);
-  	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
-
+  	/* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both; */
+  animation: vibrate 0.5s;
+  animation-iteration-count: 4s;
 }
 
 .logo-right-align img:hover {
@@ -753,3 +758,21 @@ transition: 1s ease;
   float: left;
   color: #999;
 }
+
+/* .hamburger {
+  display: none;
+} */
+
+/* @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+header.navHeader {
+  display: flex;
+  flex-direction: column;
+  border-color: #efe81a;
+  border-bottom-style: solid;
+  border-bottom-width: 3pt;
+  background-image: inherit;
+  flex-wrap: wrap;
+  /* height: 188px; */
