@@ -68,13 +68,13 @@
 .firstFont {
   font-family: "Agabil";
   color: #1e4497;
-  font-size: 24pt;
+  font-size: 20pt;
 }
 
 .secondFont {
   font-family: "Fifth-Grader";
   color: #ec1e27;
-  /* font-size: 24pt; */
+  font-size: 24pt;
 }
 
 .sixthFont {
@@ -89,13 +89,13 @@
 .thirdFont {
   font-family: "Agabil";
   color: #ec1e27;
-  font-size: 24pt;
+  font-size: 20pt;
 }
 
 .fourthFont {
   font-family: "Fifth-Grader";
   color: #1e4497;
-  /* font-size: 24pt; */
+  font-size: 24pt;
 }
 
 .fifthFont {
@@ -657,6 +657,7 @@ transition: 1s ease;
   align-items: center;
   display: flex;
   padding-top: 20px;
+  scale: .8;
 }
 
 .centered {
