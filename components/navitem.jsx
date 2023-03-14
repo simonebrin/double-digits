@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 const NavItem = ({ source, styling, width, href }) => {
   return (
     <Link
-      class={`${styles.nav__link} ${styles[styling]}`}
+      className={`${styles.nav__link} ${styles[styling]}`}
       href={href}
       style={{ paddingLeft: "15px" }}
     >

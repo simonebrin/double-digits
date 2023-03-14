@@ -764,9 +764,9 @@ transition: 1s ease;
 } */
 
 @media (max-width: 645px) {
-  .hamburger {
+  /* .hamburger {
     display: flex;
-  }
+  } */
 header.navHeader {
   display: flex;
   flex-direction: column;
@@ -804,15 +804,13 @@ header.navHeader {
   margin: 10px;
   margin-left: 20px;
 }
-.column img {
-  /* width: 180%;
+/* .column img {
+  width: 180%;
   height: 100%;
 padding-right: 160px;
   align-items: center;
-  display: flex; */
-  /* float: right; */
-  /* padding-left: 40px; */
-}
+  display: flex;
+} */
 
 .row {
   width: 100%;
