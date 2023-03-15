@@ -802,7 +802,7 @@ header.navHeader {
   float: left;
   font-size: 14px;
   align-items: center;
-  margin: 10px;
+  margin: 0px;
   margin-left: 20px;
 }
 /* .column img {
@@ -866,7 +866,7 @@ padding-right: 160px;
 .sixthFont {
   font-family: "Fifth-Grader";
   color: #ec1e27;
-  font-size: 36pt;
+  font-size: 24pt;
   text-decoration-line: underline;
   text-decoration-color: #efe81a;
   text-decoration-thickness: 5pt;
@@ -882,5 +882,66 @@ padding-right: 160px;
   font-family: "Fifth-Grader";
   color: #1e4497;
   font-size: 18pt;
+}
+
+/* Chat containers */
+.containers {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.containerDarker {
+  border-color: #ccc;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Clear floats */
+.containers::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerDarker::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.containers img {
+  float: left;
+  max-width: 40px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containerDarker img {
+  float: right;
+  max-width: 40px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.containerDarker p {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.containerRight {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
 }
 }

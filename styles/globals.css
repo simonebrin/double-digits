@@ -34,7 +34,7 @@ body {
 
 @media (max-width: 645px) {
   body {
-    background-image: url("../public/ruledd.png");
+    background-image: url("../public/smallRuled.png");
             /* background-size: 2995px 3080px; */
                   background-repeat: no-repeat;
     /* background-size: contain; */
