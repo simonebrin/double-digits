@@ -279,41 +279,21 @@ header.navHeader img {
   margin-left: 20px;
 }
 
-/* .nav__link img:hover {
-  -webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
-transition: 1s ease;
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-} */
-
 .news-hover img:hover {
   content: url(../public/newshover.png);
-  /* -webkit-transform: rotate(12deg) scale(1.4);
-	transform: rotate(12deg) scale(1.4); */
   animation: vibrate 0.5s;
   animation-iteration-count: 4s;
-    	/* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both; */
   cursor: pointer;
 }
 
 .community-hover img:hover {
   content: url(../public/communityog.png);
-  /* animation: jello 2s ease 0s 1 normal none; */
-  /* -webkit-animation: flip-horizontal-bottom 0.4s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse;
-  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    reverse; */
   animation: vibrate 0.5s;
   animation-iteration-count: 4s;
 }
 
 .events-hover img:hover {
   content: url(../public/eventshover.png);
-  	/* -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both; */
   animation: vibrate 0.5s;
   animation-iteration-count: 4s;
 }
@@ -321,179 +301,6 @@ transition: 1s ease;
 .logo-right-align img:hover {
   content: url(../public/dbldigitshover.png);
   animation: stretch 2s ease 0s 1 normal forwards;
-}
-
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-
-
-@-webkit-keyframes rotate-in-center {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
-@keyframes rotate-in-center {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes flip-horizontal-bottom {
-  0% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-  }
-}
-@keyframes flip-horizontal-bottom {
-  0% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-180deg);
-    transform: rotateX(-180deg);
-  }
-}
-
-@keyframes spinner {
-  0% {
-    opacity: 1;
-    transform: rotate(0) scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    transform: rotate(-540deg) scale(2);
-  }
-}
-
-@keyframes jello {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(0.75);
-    opacity: 0.25;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 @keyframes vibrate {
@@ -562,20 +369,6 @@ transition: 1s ease;
   }
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
 .navleft img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -583,11 +376,6 @@ transition: 1s ease;
   transition: 1s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .navMenuBar {
-    display: none;
-  }
-}
 
 .row {
   width: 100%;
@@ -764,7 +552,7 @@ transition: 1s ease;
   display: none;
 } */
 
-@media (max-width: 645px) {
+@media screen and (max-width: 640px) {
   /* .hamburger {
     display: flex;
   } */
@@ -787,14 +575,21 @@ header.navHeader {
 .nav__link img {
   scale: .8;
   transition: 1s ease;
-  margin-left: 10px;
+  margin-left: 4px;
+}
+.nav__link{
+    display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  background-position: center;
+  background-size: cover;
 }
 .latest {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 20px;
-  scale: .6;
+  padding-top: 10px;
+  scale: .5;
 }
 .column {
   width: 50%;
@@ -803,12 +598,13 @@ header.navHeader {
   font-size: 14px;
   align-items: center;
   margin: 0px;
-  margin-left: 20px;
+  margin-left: 3px;
 }
+
 /* .column img {
   width: 180%;
   height: 100%;
-padding-right: 160px;
+padding-right: 60px;
   align-items: center;
   display: flex;
 } */
@@ -819,7 +615,7 @@ padding-right: 160px;
   align-items: center;
   display: flex;
   justify-content: right;
-  padding: 20px;
+  padding: 10px;
 }
 
 .row div {
@@ -833,7 +629,7 @@ padding-right: 160px;
   display: flex;
   justify-content: left;
   flex-direction: row-reverse;
-  padding: 20px;
+  padding: 10px;
 }
 .columnRight {
   width: 50%;
@@ -854,19 +650,19 @@ padding-right: 160px;
 .firstFont {
   font-family: "Agabil";
   color: #1e4497;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 .secondFont {
   font-family: "Fifth-Grader";
   color: #ec1e27;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 .sixthFont {
   font-family: "Fifth-Grader";
   color: #ec1e27;
-  font-size: 24pt;
+  font-size: 22pt;
   text-decoration-line: underline;
   text-decoration-color: #efe81a;
   text-decoration-thickness: 5pt;
@@ -875,13 +671,13 @@ padding-right: 160px;
 .thirdFont {
   font-family: "Agabil";
   color: #ec1e27;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 .fourthFont {
   font-family: "Fifth-Grader";
   color: #1e4497;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 /* Chat containers */

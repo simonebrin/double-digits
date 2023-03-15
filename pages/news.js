@@ -17,6 +17,7 @@ export default function News() {
           height={445}
         />
       </div>
+      <br />
       <div className={styles.row}>
         <div className={styles.column}>
           <img
@@ -50,6 +51,8 @@ export default function News() {
           </p>
         </div>
       </div>
+      <br />
+      <br />
     </>
   );
 }

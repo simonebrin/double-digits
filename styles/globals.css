@@ -32,7 +32,7 @@ body {
       background-origin: padding-box; */
 }
 
-@media (max-width: 645px) {
+@media (max-width: 640px) {
   body {
     background-image: url("../public/smallRuled.png");
             /* background-size: 2995px 3080px; */

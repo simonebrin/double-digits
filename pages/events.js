@@ -17,6 +17,7 @@ export default function Events() {
           height={445}
         />
       </div>
+      <br />
       <div className={styles.row}>
         <div className={styles.column}>
           <img
@@ -47,6 +48,10 @@ export default function Events() {
           </p>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
